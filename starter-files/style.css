@@ -1,0 +1,141 @@
+* {
+  padding: 4px 4px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  width: 68px;
+  height: auto;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 40px;
+}
+
+.logo {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Coiny";
+  color: #ffffff;
+  line-height: 1;
+  margin-top: 6px;
+}
+
+body {
+  background-color: #334155;
+  color: #fafaf9;
+  padding: 48px 64px;
+}
+
+.form {
+  background-color: #1e293b;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  text-align: center;
+}
+
+.fact {
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: sans-serif;
+  background-color: #1e293b;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  border: 4px dotted black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  letter-spacing: -1px;
+}
+
+.vote-buttons {
+  margin-left: 3px;
+}
+
+.bt {
+  border: none;
+  font-family: "Coiny", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 16px 0px 13px;
+  background-image: linear-gradient(
+    135deg,
+    #3b82f6,
+    #16a34a,
+    #ef4444,
+    #eab308,
+    #14b8a6,
+    #db2777
+  );
+  color: inherit;
+  transition: 0.3s;
+}
+
+.bt-large {
+  font-size: 30px;
+}
+.bt-all {
+  margin: 10px auto;
+  width: 100%;
+}
+
+.bt-category {
+  background-image: none;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.bt:hover {
+  transform: scale(110%) rotate(-2deg);
+}
+
+.tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Coiny";
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.source:link,
+.source:visited {
+  color: rgb(91, 91, 91);
+  text-decoration: none;
+  margin-left: 12px;
+  transition: 0.5s;
+}
+
+.source:active,
+.source:hover {
+  color: rgb(150, 247, 5);
+}
