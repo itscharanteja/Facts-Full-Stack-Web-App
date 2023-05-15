@@ -39,14 +39,14 @@
           <h1>Today I learned</h1>
         </div>
 
-        <button class="bt bt-large">Share a fact</button>
+        <button class="bt bt-large bt-open">Share a fact</button>
       </header>
 
-      <form class="form">
+      <form class="form hidden">
         <input type="text" placeholder="Share a fact ..." />
         <span>200</span>
         <input type="text" placeholder="Trust worthy space ..." />
-        <select name="" id="">
+        <select>
           <option value="">Choose category</option>
           <option value="technology">Technology</option>
           <option value="society">Society</option>
@@ -73,7 +73,7 @@
           </ul>
         </aside>
         <section>
-          <ul>
+          <ul class="fact-list">
             <li class="fact">
               <p>
                 React is being developed by Meta (formerly facebook)
@@ -85,12 +85,12 @@
                 >
               </p>
               <span class="tag" style="background-color: #3b82f6">
-                #technology</span
+                technology</span
               >
               <div class="vote-buttons">
-                <button class="bt">👍🏻 <strong>24</strong></button>
-                <button class="bt">🤯 <strong>9</strong></button>
-                <button class="bt">⛔️ <strong>4</strong></button>
+                <button class="bt vb">👍🏻 24</button>
+                <button class="bt vb">🤯 9</button>
+                <button class="bt vb">⛔️ 4</button>
               </div>
             </li>
 
@@ -107,13 +107,13 @@
                 >
               </p>
               <span class="tag" style="background-color: #eab308">
-                #society</span
+                society</span
               >
 
               <div class="vote-buttons">
-                <button class="bt">👍🏻 <strong>11</strong></button>
-                <button class="bt">🤯 <strong>2</strong></button>
-                <button class="bt">⛔️ <strong>0</strong></button>
+                <button class="bt vb">👍🏻 11</button>
+                <button class="bt vb">🤯 2</button>
+                <button class="bt vb">⛔️ 0</button>
               </div>
             </li>
 
@@ -128,12 +128,12 @@
                 >
               </p>
               <span class="tag" style="background-color: #16a34a">
-                #society</span
+                society</span
               >
               <div class="vote-buttons">
-                <button class="bt">👍🏻 <strong>8</strong></button>
-                <button class="bt">🤯 <strong>3</strong></button>
-                <button class="bt">⛔️ <strong>1</strong></button>
+                <button class="bt vb">👍🏻 8</button>
+                <button class="bt vb">🤯 3</button>
+                <button class="bt vb">⛔️ 1</button>
               </div>
             </li>
           </ul>
@@ -141,4 +141,5 @@
       </main>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>

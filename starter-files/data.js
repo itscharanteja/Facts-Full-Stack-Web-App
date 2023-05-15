@@ -9,6 +9,8 @@ const CATEGORIES = [
   { name: "news", color: "#8b5cf6" },
 ];
 
+const all = CATEGORIES.map((el) => el.color);
+console.log(all);
 const initialFacts = [
   {
     id: 1,
@@ -42,8 +44,15 @@ const initialFacts = [
     createdIn: 2015,
   },
 ];
+function calcage(year) {
+  const curyear = new Date().getFullYear();
+  return curyear - year;
+}
+
+const factAges = initialFacts.map((el) => calcage(el.createdIn));
+console.log(factAges.join(","));
 
 // LINK TO APP SAMPLE DATA: https://docs.google.com/spreadsheets/d/1eeldcA_OwP4DHYEvjG0kDe0cRys-cDPhc_E9P9G1e3I/edit#gid=0
 
 // 👍 🤯 ⛔️
-console.log(typeof(initialFacts));
+console.log(typeof initialFacts);

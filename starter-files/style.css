@@ -26,6 +26,12 @@ header {
   gap: 40px;
 }
 
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
 .logo {
   padding: 10px;
   display: flex;
@@ -53,7 +59,55 @@ body {
   background-color: #1e293b;
   margin-bottom: 16px;
   padding: 16px 24px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.form input,
+.form select {
+  width: 220px;
+  border-radius: 100px;
+  border: none;
+  background-color: rgb(34, 57, 93);
+  color: inherit;
+  padding: 16px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.form input {
+  padding-right: 24px;
+}
+
+.form span {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Coiny";
+  margin-right: 18px;
+}
+
+.form input::placeholder {
+  color: rgb(48, 101, 185);
+  font-family: "Coiny";
+}
+
+.form input:first-child {
+  flex-grow: 1;
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding: 32px 48px;
+  }
+  .form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .form input,
+  .form select {
+    width: auto;
+  }
 }
 
 .fact {
@@ -68,11 +122,18 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
+  border-radius: 50px;
 }
 
-.vote-buttons {
-  margin-left: 3px;
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+  }
 }
 
 .bt {
@@ -97,8 +158,30 @@ body {
   transition: 0.3s;
 }
 
+.vote-buttons {
+  margin-left: 3px;
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.vb {
+  border-radius: 100px;
+  background-image: none;
+  color: inherit;
+  background-color: #475569;
+  padding: 6px 12px;
+  font-size: 500;
+  transition: 0.3s;
+}
+
+.vote-buttons button:hover {
+  background-color: black;
+}
+
 .bt-large {
   font-size: 30px;
+  padding: 15px;
 }
 .bt-all {
   margin: 10px auto;
@@ -107,7 +190,8 @@ body {
 
 .bt-category {
   background-image: none;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   width: 100%;
 }
 
@@ -121,6 +205,7 @@ body {
   font-family: "Coiny";
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 50px;
 }
 
 ul {
