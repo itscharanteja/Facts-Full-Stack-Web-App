@@ -1,0 +1,226 @@
+* {
+  padding: 4px 4px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  width: 68px;
+  height: auto;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.logo {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Coiny";
+  color: #ffffff;
+  line-height: 1;
+  margin-top: 6px;
+}
+
+body {
+  background-color: #334155;
+  color: #fafaf9;
+  padding: 48px 64px;
+}
+
+.form {
+  background-color: #1e293b;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.form input,
+.form select {
+  width: 220px;
+  border-radius: 100px;
+  border: none;
+  background-color: rgb(34, 57, 93);
+  color: inherit;
+  padding: 16px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.form input {
+  padding-right: 24px;
+}
+
+.form span {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Coiny";
+  margin-right: 18px;
+}
+
+.form input::placeholder {
+  color: rgb(48, 101, 185);
+  font-family: "Coiny";
+}
+
+.form input:first-child {
+  flex-grow: 1;
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding: 32px 48px;
+  }
+  .form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .form input,
+  .form select {
+    width: auto;
+  }
+}
+
+.fact {
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: sans-serif;
+  background-color: #1e293b;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  border: 4px dotted black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  letter-spacing: 0px;
+  border-radius: 50px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+  }
+}
+
+.bt {
+  border: none;
+  font-family: "Coiny", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 16px 0px 13px;
+  background-image: linear-gradient(
+    135deg,
+    #3b82f6,
+    #16a34a,
+    #ef4444,
+    #eab308,
+    #14b8a6,
+    #db2777
+  );
+  color: inherit;
+  transition: 0.3s;
+}
+
+.vote-buttons {
+  margin-left: 3px;
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.vb {
+  border-radius: 100px;
+  background-image: none;
+  color: inherit;
+  background-color: #475569;
+  padding: 6px 12px;
+  font-size: 500;
+  transition: 0.3s;
+}
+
+.vote-buttons button:hover {
+  background-color: black;
+}
+
+.bt-large {
+  font-size: 30px;
+  padding: 15px;
+}
+.bt-all {
+  margin: 10px auto;
+  width: 100%;
+}
+
+.bt-category {
+  background-image: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.bt:hover {
+  transform: scale(110%) rotate(-2deg);
+}
+
+.tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Coiny";
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+.source:link,
+.source:visited {
+  color: rgb(91, 91, 91);
+  text-decoration: none;
+  margin-left: 12px;
+  transition: 0.5s;
+}
+
+.source:active,
+.source:hover {
+  color: rgb(150, 247, 5);
+}
